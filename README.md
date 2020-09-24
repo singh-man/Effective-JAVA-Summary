@@ -103,7 +103,7 @@ _If you are the publisher and think this repository should not be public, just w
 **_ADVANTAGES_**
 
 * Unlike constructors, they have names
-* Unlike constructors, they are not requires to create a new object each time they're invoked
+* Unlike constructors, they are not required to create a new object each time they're invoked
 * Unlike constructors, they can return an object of any subtype of their return type
 * They reduce verbosity of creating parameterized type instances
 
@@ -1252,7 +1252,7 @@ _Raw types_ is the generic type definition without type parameters. `List`
 
 ```java
 
-	private final Collection stamps = ...
+	private final List stamps = ...
 
 	stamps.add(new Coin(...)); //Erroneous insertion. Does not throw any error
 
@@ -1316,7 +1316,7 @@ Eliminate every unchecked warning that you can, if you can´t use _Suppress-Warn
 
 ## 25. Prefer lists to arrays
 Arrays are _covariant_: if `Sub` is a subtype of `Super`, `Sub[]` is a subtype of `Super[]`  
-Generics are _invariant_: for any two types `Type1` and `Type2`, `List<Type1>` in neither  sub or super type of `List<Type1>`
+Generics are _invariant_: for any two types `Type1` and `Type2`, `List<Type1>` in neither  sub or super type of `List<Type2>`
 
 ```java
 
